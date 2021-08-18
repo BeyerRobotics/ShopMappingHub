@@ -1,0 +1,141 @@
+
+
+body{
+    /* background: #cacaca; */
+    /* background-image: repeating-linear-gradient(to bottom right, blue , red ); */
+    background-image: url(Images/BackgroundImage.jpg);
+    padding: 0 20px;
+  }
+
+  .Title{
+      text-align: center;
+      font-size: 55px;
+      /*color: white;  /* Fallback: assume this color ON TOP of image */
+      /* background: url(Images/BluePrint.jpg) repeat;
+      background-size: 200px;*/
+      
+      /*Title Color*/
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); 
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color:#000000;
+      
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+
+  
+  .wrapper{
+   max-width: 450px;
+   margin: 150px auto;    
+  }
+
+  .wrapper .search-input{
+      position: relative;
+      background: #ffffff;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+
+  .search-input input{
+      height: 55px;
+      width: 82%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 60px 0 20px;
+      font-size: 18px;
+      box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+
+  .search-input .icon{
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+      font-size: 20px;
+      color: #000000;
+      cursor: pointer;
+  }
+
+  .search-input .autocom-box{
+     /* padding: 10px 8px;*/ 
+      padding: 0px;
+      max-height:280px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .search-input.active .autocom-box{
+      padding: 10px 8px;
+      opacity: 1;
+      pointer-events: auto;
+  }
+
+  .autocom-box li{
+      list-style: none;
+      padding: 8px 12px;
+      width: 100%;
+      cursor: default;
+      border-radius: 3px;
+      display: none;
+  }
+
+  .search-input.active .autocom-box li{
+      display: block;
+  }
+
+  .autocom-box li:hover{
+      background: #efefef;;
+  }
+
+  .splide {
+      
+    border-radius: 25px;
+    background-color: #f5f5f56b;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*Size of font on slides*/
+    font-size: 40px;
+    font-family: "Monaco";
+    
+    
+}
+
+  .splide__slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width : 450px;
+	height: 400px;
+}
+
+
+
+
+  /*.slideshow-container{
+    /*display: none;*/
+  
+  
